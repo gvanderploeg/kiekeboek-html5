@@ -1,0 +1,32 @@
+{
+  "name": "fk-intranet-app",
+  "version": "0.1.0",
+  "description": "Yet another amazing AngularJS app",
+  "keywords": [
+    "angular"
+  ],
+  "homepage": "https://github.com/gvanderploeg/fk-intranet-app",
+  "bugs": "https://github.com/gvanderploeg/fk-intranet-app/issues",
+  "author": {
+    "name": "Geert van der Ploeg",
+    "email": "",
+    "url": "https://github.com/gvanderploeg"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gvanderploeg/fk-intranet-app.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "dependencies": {
+    "bootstrap": "3.1.1",
+    "angular-animate": "^1.2.17",
+    "angular-cookies": "^1.2.17",
+    "angular-route": "^1.2.17",
+    "angular-touch": "^1.2.17",
+    "angular": "^1.2.17"
+  }
+}
