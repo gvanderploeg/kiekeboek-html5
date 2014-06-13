@@ -207,16 +207,6 @@ module.exports = function(grunt) {
         root: '<%= yo.app %>'
       }
     },
-    imagemin: {
-      dist: {
-        files: [{
-          expand: true,
-          cwd: '<%= yo.app %>/images',
-          src: '{,*/}*.{png,jpg,jpeg,gif}',
-          dest: '<%= yo.dist %>/images'
-        }]
-      }
-    },
     svgmin: {
       dist: {
         files: [{
@@ -306,9 +296,7 @@ module.exports = function(grunt) {
         'copy:styles'
       ],
       dist: [
-        'copy:styles',
-        'imagemin',
-        'svgmin'
+        'copy:styles'
       ]
     },
 
