@@ -1,19 +1,19 @@
 <h1 class="cover-heading">Fonteinkerk Kiekeboekzoekhoek.</h1>
-<p class="lead">Even snel iemand opzoeken in het Kiekeboek. Bookmark en zet hem als app op je tablet/telefoon.</p>
-<p class="lead">
-  <a href="#" class="btn btn-lg btn-default">Learn more</a>
-</p>
+<p class="lead">Even snel iemand opzoeken in het Kiekeboek. Bookmark en zet hem als app op je tablet en telefoon.</p>
 
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-12">
 			<form class="form-inline">
 				<div class="form-group">
-			    	<input type="text" class="form-control" id="keyword" name="keyword" value="{{keyword}}" placeholder="Zoeken">
+			    	<input type="text" class="form-control" ng-model="keywords" placeholder="Zoeken">
+					<button type="submit" class="form-control" ng-click="search()">Zoek</button>
 				</div>
 			</form>
 		</div>
 	</div>
+	<div>Keywords: {{keywords}}</div>
+	<div>persons: {{persons}}</div>
 	<div class="row">
 	<div class="col-12">
 		<ul>

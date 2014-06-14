@@ -6,7 +6,15 @@ angular.module('gvanderploeg.FkIntranetApp')
 
     $scope.$path = $location.path.bind($location);
     $scope.version = version;
+	$scope.keywords = 'Foobar';
+	$scope.persons = [];
 	
-	$scope.persons = Fkappservice.search($scope.keyword);
-
+	$scope.search = function() {
+		console.log("Keywords is: " + $scope.keywords);
+		Fkappservice.search($scope.keywords, function(itemsFound) { 
+			$scope.persons = itemsFound;
+		
+			console.log("$scope.persons is: " + $scope.persons);
+		});
+	};
   }]);
